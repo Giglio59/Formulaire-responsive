@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header class="topbar" >
+        <nav class="header_nav">
+            <a href="Indexx.html"  title="logo Formulaire"><img class="logo" src="log.png" alt="log" ></a>
+            <a href="Indexx.html" class="active" Title="Formulaire">Formulaire</a>
+            <a href="#"  Title="home">home</a>
+            <a href="#" Title="A propos">A propos</a>
+            <a href="#" Title="Nous Contact">Contact</a>
+        </nav> 
+    </header>
+    <main>
+        <form>
+        
+        
+                <h2 class=" chic"><i class="fa-solid fa-house"></i> Informations personnelles :</h2>
+            <div>
+                    <label for="firstName">Prénom<em>*</em></label>
+                    <input class="ipt3" type="text" id="firstName" placeholder=" Jean" required>
+            </div>
+            <div>
+                    <label for="name">Nom<em>*</em></label>
+                    <input  class="ipt3"type="text" id="name" placeholder=" Ludonvich" required>
+            </div>
+            <div>
+                    <label for="age">Âge<em>*</em></label>
+                    <input class="ipt3" type="text" id="age" placeholder=" 22 ans" required>
+            </div>
+            <div>
+                    <label for="sexe">Genre<em>*</em></label>
+                <select id="sexe" name="sexe" required>
+                    <option value="">Sélectionnez votre genre</option>
+                    <option value="Homme">Homme</option>
+                    <option value="Femme">Femme</option>
+                    <option value="Autre">Autre</option>
+                </select>
+            </div>
+                <h2 class="ipt4" > <i class="fa-solid fa-palette"></i>Selectionner la couleur de vos yeux : </h2> 
+            <div>
+                    <label for="yeux">Vos yeux sont<em>*</em></label>
+                    <input class="nine"  type="color" id="oeil" name="yeux"
+                       value="#f5f5dc">
+            </div>
+        
+        
+            <h2 class=" chic"><i class="fa-solid fa-envelope"></i> Coordonnées :</h2>
+            <div>
+                    <label for="email"> E-mail<em>*</em></label>
+                    <input class="ipt3" type="email" id="email" placeholder=" Toto@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3,}$" required>
+            </div>
+            <div>
+                    <label for="adresse">Adresse postale<em>*</em></label>
+                    <input class="ipt3" type="text" id="adresse" placeholder=" 144 rue de Moulinette" required>
+            </div>
+            <div>
+                    <label for="codePostal">Code postal<em>*</em></label>
+                    <input class="ipt3" type="text" id="codePostal" placeholder=" 59000" pattern="[0-9]{5}" required>
+            </div>
+            <div>
+                    <label for="ville">Ville<em>*</em></label>
+                    <input class="ipt3" type="text" id="ville" placeholder=" Tourcoing" required>
+            </div>
+        
+        
+                <h2 class=" chic"><i class="fa-solid fa-toolbox"></i>  Profession :</h2><br>
+           
+                <label class=" chic"> Cochez votre métier <em>*</em></label>
+            <div>
+                    <input type="radio" id="boulanger" name="metier" value="Boulanger">
+                    <label for="boulanger">Boulanger</label>
+            </div>
+            <div>
+                    <input type="radio" id="ouvier" name="metier" value="ouvier">
+                    <label for="ouvier">Ouvrier</label>
+            </div>
+            <div>
+                    <input type="radio" id="policier" name="metier" value="policier">
+                    <label for="policier">Policier</label>
+            </div>
+            <div>
+                    <input type="radio" id="fonctionnaire" name="metier" value="Fonctionnaire">
+                    <label for="fonctionnaire">Fonctionnaire</label>
+            </div>
+            <div>
+                    <input type="radio" id="autre" name="metier" value="autre">
+                    <label for="autre">Autre</label>
+            </div>
+                      
+                <h2 class="ipt4"><i class="fa-light fa-file-doc"></i>Charger votre CV : <em>*</em></h2>
+            <div>
+                <label class="ipt5"for="avatar"></label>
+                <input class="nina" type="file"id="avatar" name="avatar" accept="image/png, image/jpeg,fichier/pdf"> 
+            </div>  
+                <h2 class="ipt4" ><i class="fa-solid fa-calendar-days"></i> Disponibilité:<em>*</em> </h2>
+            <div>
+                    <label for="start"> Entrée votre date : </label>
+
+                    <input class="nine "type="date" id="start" name="trip-start"value="2023-04-27" min="2018-01-01" max="2025-12-31">
+
+
+            </div>
+                <h2>Selectionner votre technologie maitrisé : <em>*</em></h2>
+                <select class="Selec">
+                        <optgroup label="Front">
+                        <option>Html</option>
+                        <option>Css</option>
+                        <option>js</option>
+                        <option>React</option>
+                        <option>Angular</option>
+                        <option>Vue</option>
+                
+                        </optgroup>
+                        <optgroup label="Back">
+                        <option>Java</option>
+                        <option>Php</option>
+                         <option>Laravel</option>
+                         <option>Symfony</option>
+                        <option>NodeJs</option>
+                        <option>Ruby</option>
+                        </optgroup>
+                </select>
+
+
+
+
+
+
+
+
+            <div class="bouton">
+                    <input class="nine" type="submit" value="Envoyer">
+                    <input class="nane" type="reset" value="Annuler">
+            </div>
+            <div class="social">
+                    <a class= "S" href="#" title="facebook"><i class="fa-solid fa-florin-sign"></i></a>
+                    <a class= "c" href="#" title="twitter"><i class="fa-solid fa-t"></i></a>
+            </div>
+                
+
+            
+   
+        </form>
+    </main>
+</body>
+</html>
