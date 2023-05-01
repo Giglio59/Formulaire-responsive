@@ -18,7 +18,7 @@ label{
 *{
     padding: 0px;
     margin:0px;
-    font-size: 23px;
+    font-size: 2vw;
     font-style: oblique;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -37,19 +37,20 @@ h2{
 #sexe{
     font-family:Georgia, 'Times New Roman', Times, serif;
    color: gray;
+   padding-right: 7vw;
 }
 
 form,form>*{
     
-    padding-left: 28px;
-    padding-right: 20px;
-    border-width: 20px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-width: 0vw;
     z-index: 3;
     position: relative;
     padding-top: 10px;
-    margin-top: 25px;
+    margin-top: 1vw;
     border-radius: 33px;
-    padding-top: 35px;
+    padding-top: 9vw;
 }
 
 form:after{
@@ -74,13 +75,57 @@ div{
 .ipt3{
     background-color:#f1e7d4;
     border-radius: 8px;
-    padding-right: 250px;
+    padding-right: 11vw;
     border-color: rgb(255 255 255);
     cursor: pointer;
     
     
 }
 
+.input1{
+    background-color:#f1e7d4;
+    border-radius: 8px;
+    border-color: rgb(255 255 255);
+    cursor: pointer;
+}
+
+.input2{
+    background-color:#f1e7d4;
+    border-radius: 8px;
+    padding-right: 4vw;
+    border-color: rgb(255 255 255);
+    cursor: pointer;
+} 
+.input6{
+    background-color:#f1e7d4;
+    border-radius: 8px;
+    padding-right: 10vw;
+    border-color: rgb(255 255 255);
+    cursor: pointer;
+}
+
+.input5{
+    background-color:#f1e7d4;
+    border-radius: 8px;
+    padding-right: 9vw;
+    border-color: rgb(255 255 255);
+    cursor: pointer;
+}
+.input4{
+    background-color:#f1e7d4;
+    border-radius: 8px;
+    padding-right: 6vw;
+    border-color: rgb(255 255 255);
+    cursor: pointer;
+
+}
+.input3{
+    background-color:#f1e7d4;
+    border-radius: 8px;
+    padding-right: 9vw;
+    border-color: rgb(255 255 255);
+    cursor: pointer;
+}
 select{
     background-color:#f1e7d4;
     border-radius: 8px;
@@ -159,8 +204,8 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .bouton{
-    padding-top: 30px;
-    margin-left: 245px;
+    padding-top: 1vw;
+    margin-left: 23vw;
 }
 
 .nina{
@@ -171,7 +216,7 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     font-family: "Ma fonte";
     border-radius: 10px;
     cursor: pointer;
-    width: 420px;
+    width: 41vwpx;
 
 }
 
@@ -218,8 +263,11 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     border-radius: 32px;
     padding-top: 5px;
     margin-top: 20px;
+    margin-left: 14px;
   }
-
+.logo{
+    width: 6vw;
+}
 
 /*Css animation*/
 
@@ -249,7 +297,7 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 
 .logo:hover{
     color: red;
-    background-color:#f1e7d4;
+   
     animation:vibration 0.4s ease;
 
 }
@@ -279,22 +327,24 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /*Css top bar*/
-
+.label
+{
+    display: none;
+}
 
 .topbar{
-        background: #f1e7d4;;
-        position: fixed;
-        z-index: 5;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        padding: 20px;
-        box-shadow: 0 4px 10px #f1e7d4;
-        padding-left: 0px;
-        
-    }
-
+    background: #f1e7d4;;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 2vw;
+    box-shadow: 0 4px 10px #f1e7d4;
+    padding-left: 0px;
+    
+}
 
 .topbar nav {
         display: flex;
@@ -302,13 +352,6 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
-.topbar nav a {
-    color: #9f9f9f;
-    text-decoration: none;
-    font-weight: 550;
-    margin: 0 53px;
-
- }
 
 .topbar nav a:hover,.topbar nav a.active  {
     color: black;
@@ -317,9 +360,129 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 .logo{
     display: flex;
     justify-content:flex-start;
-    width: 70px;
+    width: 10vw;
+  
+}
+
+
+.fa-sharp {
+    width: 13vw;
 
 }
+
+/*CSS responsive*/
+
+@media all and (min-width:717px){
+    .topbar nav a {
+        color: #9f9f9f;
+        text-decoration: none;
+        font-weight: 550;
+        margin: 0 53px;
+    }
+    .logo1{
+        display: none;
+    }
+
+}
+@media all and (max-width: 717px){
+    nav
+    {
+        height: 60px;
+    }
+ 
+    .main_pages 
+    {
+        display: none;
+    }
+    .topbar nav {
+        margin-left: 13px;
+        display: flex;
+        align-content: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-block: 30px;
+        flex-wrap: nowrap;
+        align-items: baseline;}
+
+        
+        .topbar nav a {
+            color: #9f9f9f;
+            text-decoration: none;
+            font-weight: 550;
+            margin: 7px 53px;
+}}
+    .label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+
+.label, #toggle
+{
+    display: none;
+}
+ 
+@media all and (max-width: 717px)
+{
+    nav
+    {
+        height: 60px;
+    }
+ 
+    nav.main_pages 
+    {
+        display: none;
+        flex-direction: column;
+        background: #48435C;
+        height: 220px;
+    }
+ 
+    nav.main_pages a {
+        width: 50%;
+    }
+ 
+    .label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+        margin-left: 70px;
+    }
+ 
+    #toggle:checked + .main_pages {
+        width: 30px;
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+}
+    
+@media all and (max-width: 467px){
+    form{
+         font-weight: 200;
+    }
+    
+}
+
 
 
 
